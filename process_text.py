@@ -9,7 +9,7 @@ def main():
     
     try:
         # Process the document and create vector embeddings
-        print("Processing the legal text...")
+        print("Processing the text...")
         vectorstore = processor.process_text_file(text_path)
         
         # Save the vector store for future use
@@ -19,7 +19,7 @@ def main():
         
         # Test the similarity search
         print("\nTesting similarity search...")
-        query = "¿Cuáles son los derechos del consumidor?"
+        query = "?"
         results = processor.similarity_search(query, k=3)
         
         print("\nSearch Results:")
